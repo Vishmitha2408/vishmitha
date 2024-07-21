@@ -3,9 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stylish Resume</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Ensure border-radius corners are visible */
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .profile-info img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .name-email {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .name-email h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .name-email p {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #666;
+        }
+
+        /* Content Sections */
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px 4px 0 0;
+            margin-top: 0;
+        }
+
+        .section-content {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        .projects ul, .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .projects li, .skills li {
+            margin-bottom: 8px;
+        }
+
+        /* Video Section */
+        .video {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .video video {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer Declaration */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 600px) {
+            .profile-info {
+                flex-direction: column;
+            }
+            .name-email h1 {
+                font-size: 24px;
+            }
+            .name-email p {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h6>hello</h6>
+    <div class="container">
+        <header>
+            <div class="profile-info">
+                <img src="profile.jpg" alt="John Doe">
+                <div class="name-email">
+                    <h1>John Doe</h1>
+                    <p>Email: vishuvishmitha23@gmail.com</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="objective">
+            <div class="section-title">Objective</div>
+            <div class="section-content">
+                <p>To obtain a challenging position in a progressive organization where my skills and abilities will be utilized.</p>
+            </div>
+        </section>
+
+        <section class="academic">
+            <div class="section-title">Academic Qualifications</div>
+            <div class="section-content">
+                <table>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Board/University</th>
+                        <th>Year</th>
+                        <th>Percentage/CGPA</th>
+                    </tr>
+                    <tr>
+                        <td>SSLC</td>
+                        <td>State Board</td>
+                        <td>2010</td>
+                        <td>71.4%</td>
+                    </tr>
+                    <tr>
+                        <td>PUC</td>
+                        <td>Pre-University Board</td>
+                        <td>2012</td>
+                        <td>85%</td>
+                    </tr>
+                    <tr>
+                        <td>BSc</td>
+                        <td>University Name</td>
+                        <td>2015</td>
+                        <td>75.45%</td>
+                    </tr>
+                    <tr>
+                        <td>MCA</td>
+                        <td>University Name</td>
+                        <td>2025</td>
+                        <td>pursing</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="section-title">Projects</div>
+            <div class="section-content">
+                <ul>
+                    <li> tourisum website-using html,css,and JavaScript</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="section-title">Skills</div>
+            <div class="section-content">
+                <ul>
+                    <li>Programming Languages: Java, Python, c</li>
+                    <li>Web Technologies: HTML, CSS</li>
+                    <li>Databases: MySQL</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="self-introduction">
+            <div class="section-title">Self Introduction</div>
+            <div class="section-content">
+                <p>I am a passionate and dedicated individual with a strong interest in software development. I enjoy learning new technologies and solving complex problems.</p>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="section-title">Video Introduction</div>
+            <div class="section-content">
+                <video controls>
+                    <source src="intro_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <footer>
+            <p>I hereby declare that the above information is true to the best of my knowledge.</p>
+        </footer>
+    </div>
 </body>
 </html>
